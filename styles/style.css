@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #16161A;
+    --white-color: #FFFFFE;
+    --orange-color: #FF8906;
+    --green-color: #2CB67D;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+h2,
+ul{
+    font-family: 'IM FELL English';
+    font-size: 18px;
+    font-weight: 300;
+}
+.container{
+    padding: 30px 63px;
+}
+
+.container .logo,
+.container .dropdown,
+.container .dropdown-item{
+    padding: 0 1rem;
+}
+.navigation .flex{
+    justify-content: space-between;
+}
+
+nav{
+    margin-right: auto;
+}
+
+.logo{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Baskervville';
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFE;
+}
+
+nav .dropdown,
+.dropdown-item li{
+    margin-bottom: 10px;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+.dropdown-item{
+    display: none;
+}
+
+/* Utilities */
+
+.flex{
+    display: flex;
+}
+
+.line{
+    border-left: solid 3px #FFFFFE;
+    height: 19px;
+}
+
+.show{
+    display: block;
+}
+
+/* Colors */
+
+.orange{
+    color: var(--orange-color);
+}
