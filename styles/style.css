@@ -17,11 +17,16 @@ body{
     position: relative;
 }
 
+h1,
 h2,
 ul{
     font-family: 'IM FELL English';
     font-size: 18px;
     font-weight: 300;
+}
+
+p{
+    font-family: 'Josefin Slab';
 }
 .container{
     padding: 30px 63px;
@@ -78,6 +83,18 @@ nav .dropdown,
     display: none;
 }
 
+.dropdown-item a:hover{
+    opacity: 80%;
+}
+
+.coven{
+    cursor: pointer;
+}
+
+.coven:hover{
+    opacity: 80%;
+}
+
 .fading{
     position: absolute;
     top: 400px;
@@ -87,6 +104,47 @@ nav .dropdown,
     z-index: 1;
 }
 
+.showcase .slider-img-container{
+    z-index: 3;
+}
+
+.showcase .slider-text-container{
+    z-index: 3;
+}
+
+.showcase .slider-text-container{
+   width: auto;
+   height: 300px;
+}
+
+.showcase h1{
+    font-family: 'IM FELL English';
+    font-size: 64px;
+    letter-spacing: 0.1em;
+}
+
+.showcase p {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+.image-slider{
+    background-image: url('../images/edited/slider-1.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:289px;width:534px;
+    margin: 1rem;
+}
+
+.item-title{
+    margin-bottom: 10px;
+}
+
+.item-para{
+    text-shadow: 1px 1px 2px black;
+}
 /* Utilities */
 
 .flex{
@@ -105,11 +163,22 @@ nav .dropdown,
 .cover {
     background-image: url('../images/sandwitch-home.jpeg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: contain;
     position: absolute;
     z-index: 0;
     width: 100%;
   }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center{
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
 
 /* Colors */
 
@@ -119,4 +188,16 @@ nav .dropdown,
 
 .cover-dark{
     opacity: 0.4;
+}
+
+/* Margin */
+
+.my-1{
+    margin: 10rem 0;
+}
+
+/* Padding */
+
+.p-1{
+    padding-right: 3rem;
 }
