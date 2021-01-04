@@ -19,6 +19,7 @@ body{
 
 h1,
 h2,
+h3,
 ul{
     font-family: 'IM FELL English';
     font-size: 18px;
@@ -27,6 +28,7 @@ ul{
 
 p{
     font-family: 'Josefin Slab';
+    line-height: 1.2em;
 }
 .container{
     padding: 30px 63px;
@@ -108,7 +110,7 @@ nav .dropdown,
 /* Showcase */
 
 .showcase{
-
+    margin-bottom: 100px;
 }
 
 .showcase .slider-img-container{
@@ -148,6 +150,7 @@ nav .dropdown,
 
 .item-para{
     text-shadow: 1px 1px 2px black;
+    margin-bottom: 10px;
 }
 
 .buy-btn{
@@ -157,4 +160,29 @@ nav .dropdown,
 
 .show{
     display: block;
+}
+
+#arrow-left,
+#arrow-right{
+    cursor: pointer;
+}
+
+/* Services */
+
+.service .grid > div{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service h3{
+    color: #FF8906;
+    padding: 0.5rem;
+}
+
+.service img{
+    padding: 1rem;
 }
