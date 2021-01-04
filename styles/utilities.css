@@ -3,8 +3,24 @@
 }
 
 .flex-v{
+    flex-direction: column;  display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
+
+.flex-f-1{
+    flex: 1 1 1;
+}
+
 .line{
     border-left: solid 3px #FFFFFE;
     height: 19px;
@@ -23,6 +39,11 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: auto;
+}
+
+.grid-2-col{
+    grid-template-columns: 500px 1fr; 
 }
 
 .center{
@@ -65,5 +86,5 @@
 /* Padding */
 
 .p-1{
-    padding-right: 3rem;
+    padding: 1rem;
 }
