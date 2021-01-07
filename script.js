@@ -15,6 +15,13 @@ icon.addEventListener('click', (e) => {
     console.log('clicked');
 })
 
+// close dropdown item when clicking everywhere but navigatio/icon
+window.addEventListener('click', (e) => {
+    if (e.target !== dropdown && e.target !== icon) {
+        dropdownItem.classList.remove('show');
+    }
+})
+
 arrowL.addEventListener('click', (e) => {
   
 })

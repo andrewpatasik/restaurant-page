@@ -134,6 +134,14 @@ a{
     margin: 100px 150px 0 150px ;
 }
 
+.showcase .container{
+    padding: 0;
+}
+
+.showcase-image{
+    margin: 0 1rem;
+}
+
 .showcase-text > h2{
     font-size: 64px;
 }
@@ -205,9 +213,7 @@ a{
 /* Tablets and under */
 /* Tablets */
 @media(max-width: 1020px){
-    .grid,
-    .showcase .grid,
-    .service .grid{
+    .showcase .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -235,6 +241,11 @@ a{
 /* Mobiles */
 
 @media(max-width: 550px){
+    .grid,
+    .service .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
     .container{
         padding: 30px 10px;
