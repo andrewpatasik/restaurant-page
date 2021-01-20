@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=IM+Fell+English&family=IM+Fell+English+SC&family=Josefin+Slab:wght@300&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +28,7 @@ h1,
 ul{
     font-family: 'IM FELL English';
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -34,13 +36,13 @@ h2,
 h3{
     font-family: 'IM FELL English SC';
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
 }
 p{
     font-family: 'Josefin Slab';
     line-height: 1.2em;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 body > :first-child{
@@ -74,7 +76,7 @@ nav{
 
 .logo{
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Baskervville';
 }
 
@@ -132,6 +134,7 @@ a{
 
 .showcase{
     margin: 100px 150px 0 150px ;
+    height: 300px;
 }
 
 .showcase .container{
@@ -159,8 +162,9 @@ a{
     height: 100px;
     border: 1px solid white; */
     padding: 0 30px;
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    width: 400px;
+    height: 200px;
 }
 
 #slider{
@@ -208,6 +212,29 @@ a{
 #arrow-left,
 #arrow-right{
     cursor: pointer;
+    width: 20px;
+}
+
+/* Footer */
+.footer{
+    margin-top: 70px;
+    padding: 0 15px;
+}
+.footer .container {
+    padding: 10px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-top: 1px solid #76767e;
+    justify-content: space-between;
+}
+
+.footer .container p:nth-child(2) {
+    padding-left: 200px;
+}
+
+.footer .container span {
+    font-family: 'Baskerville';
+    font-weight: 400;
 }
 
 /* Tablets and under */
@@ -220,6 +247,12 @@ a{
 
     .showcase{
         margin: 30px 60px;
+        height: auto;
+    }
+
+    .image-content{
+        width: 500px;
+        height: 300px;
     }
 
     .showcase .flex,
@@ -235,6 +268,10 @@ a{
 
     .showcase-text p{
         margin-bottom: 30px;
+    }
+
+    .footer .container {
+        padding-bottom: 40px;
     }
 }
 
@@ -253,6 +290,17 @@ a{
 
     .showcase{
         margin-top: 200px;
+        height: auto;
+    }
+
+    .image-content{
+        width: 300px;
+        height: 200px;
+    }
+
+    #arrow-left,
+    #arrow-right {
+        width: 15px;
     }
 
     .line,
@@ -304,5 +352,26 @@ a{
         background-color: rgba(0, 0, 0, 40%);
         filter: blur(1px);
         z-index: -1;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .footer .container {
+        background-color: var(--primary-color);
+        border-top: 1px solid #76767e;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .footer .container p:nth-child(2) {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .footer .container p:nth-child(3) {
+        margin-top: 20px;
+        padding-bottom: 30px;
     }
 }
