@@ -19,20 +19,20 @@ let imageList = [
     },
 ];
 
-dropdown.addEventListener('click', (e) => {
-    dropdownItem.classList.toggle('show');
-})
+// dropdown.addEventListener('click', (e) => {
+//     dropdownItem.classList.toggle('show');
+// })
 
-icon.addEventListener('click', (e) => {
-    dropdownItem.classList.toggle('show');
-})
+// icon.addEventListener('click', (e) => {
+//     dropdownItem.classList.toggle('show');
+// })
 
-// close dropdown item when clicking everywhere but navigatio/icon
-window.addEventListener('click', (e) => {
-    if (e.target !== dropdown && e.target !== icon) {
-        dropdownItem.classList.remove('show');
-    }
-})
+// // close dropdown item when clicking everywhere but navigatio/icon
+// window.addEventListener('click', (e) => {
+//     if (e.target !== dropdown && e.target !== icon) {
+//         dropdownItem.classList.remove('show');
+//     }
+// })
 
 arrowL.addEventListener('click', (e) => {
     displayImage('l');
@@ -97,4 +97,4 @@ function slideImage(){
     displayImage('r');
 }
 
-setInterval(slideImage, 3000);
+setInterval(slideImage, 8000);
